@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  scope :path => "/api" do
+    resources :cities, only: [:show, :index]
+    resources :states, only: [:show, :index]
+  end
+
 end
