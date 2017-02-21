@@ -22,7 +22,7 @@ module Capstone
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     Mongoid.load! './config/mongoid.yml'
-    #config.generators {|g| g.orm :active_record}
-    config.generators {|g| g.orm :mongoid}
+    config.generators {|g| g.orm :active_record}
+    # config.generators {|g| g.orm :mongoid}
   end
 end
