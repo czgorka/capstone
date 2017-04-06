@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   scope :path => "/api" do
-    resources :cities, only: [:show, :index], defaults: {format: :json}
+    resources :cities, defaults: {format: :json}
     # resources :states, only: [:show, :index]
   end
 
